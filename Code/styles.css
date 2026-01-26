@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #7fa583 0%, #4a7c6f 100%);
+    min-height: 100vh;
+}
+
+.main-title{
+    text-align: center;
+    color: #3d2519;
+    font-size: 48px;
+    margin-top: 40px;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.main-container {
+    background-color: #d4a89a;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 30px;
+    display: flex;
+    gap: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.profile-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.profile-image {
+    width: 230px;
+    height: 230px;
+    background-color: #d5b895;
+    border-radius: 20px;
+    border-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.profile-caption {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Lucida Console', monospace;
+    margin: 0;
+    text-align: left;
+    position: absolute;
+    bottom: 30px;
+    right: 2px;
+}
+
+.arrow-image {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+}
+
+.text-section {
+    flex: 1;
+    font-family: Georgia, serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-text {
+    font-size: 16px;
+    font-family: Georgia, serif;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.welcome-text{
+    font-size: 16px;
+    font-family: Georgia, serif;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+}
+
+.nav-btn {
+    background-color: #379683;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #06e4b7
+}
+
