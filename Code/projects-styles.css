@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #7fa583 0%, #4a7c6f 100%);
+    min-height: 100vh;
+    font-family: Georgia, serif;
+}
+
+.heading {
+    text-align: center;
+    color: #3d2519;
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.project-subtitle {
+    text-align: center;
+    color: #3d2519;
+    font-size: 16px;
+    margin-bottom: 50px;
+    font-family: Georgia, serif;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 60px 60px 60px;
+}
+
+.project-item {
+    background-color: #88c0d6;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0, 0.3);
+}
+
+.project-item img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.back-btn-container{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.back-btn{
+    background-color: #379683;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Georgia, serif;
+}
+
+.back-btn:hover{
+    background-color: #06e4b7;
+}
