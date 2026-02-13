@@ -14,34 +14,48 @@
 
     <!--Gallery Containers-->
     <div class="gallery-container">
-        <div class="gallery-item"> 
+        <div class="gallery-item" data-description="A small painting of kiki's delivery service done by me^^" onclick="openModal(this)"> 
             <img src="Images/artwork1.jpg" alt="Artwork-1">
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-description="Sketch of a pretty horse" onclick="openModal(this)">
             <img src="Images/artwork2.jpg" alt="Artwork-2">
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-description="The cat in colors. One of my favorite pieces done by me~" onclick="openModal(this)">
             <img src="Images/artwork3.jpg" alt="Artwork-3">
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-description="Stylish goose on the vogue cover😎" onclick="openModal(this)">
             <img src="Images/artwork4.jpg" alt="Artwork-4">
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-description="A sketch of Howl from the Ghibli movie Howl's Moving Castle. Was really proud of it when I sketched this, specially because it is one of my favourite movies ever." onclick="openModal(this)">
             <img src="Images/artwork5.png" alt="Artwork-5">
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-description="3D sketch of a ruby ring. This was my first time experiment to do a 3D object through colors and presenting the depth and light through different colors. Really old piece but quite proud of this one!" onclick="openModal(this)">
             <img src="Images/artwork6.png" alt="Artwork-6">
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-description="Sky in flowers. Don't ask what's the meaning behind this...it's just a vibe" onclick="openModal(this)">
             <img src="Images/artwork7.jpg" alt="Artwork-7">
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-description="Roses in the Blue Vase. The vase turned out pretty good considering it was my first time...really proud of the ground too ngl. Gotta work on roses tho-" onclick="openModal(this)">
             <img src="Images/artwork8.jpg" alt="Artwork-8">
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-description="Funky mister rabbit at your service! Kinda reminds me of Alice in the Wonderland." onclick="openModal(this)">
             <img src="Images/artwork9.jpg" alt="Artwork-9">
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImg" src="" alt="Artwork">
+                </div>
+                <div class="modal-description">
+                    <p id="modalDesc"></p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -49,5 +63,32 @@
 <div class="back-button-container">
     <button class="back-btn" onclick="window.location.href='home.html'"> Back to Home</button>
     </div>
+
+    <script>
+        function openModal(element) {
+            const modal= document.getElementById('modal');
+            const modalImg= document.getElementById('modalImg');
+            const modalDesc = document.getElementById('modalDesc');
+
+            const img = element.querySelector('img');
+            const description = element.getAttribute('data-description');
+
+            modalImg.src = img.src;
+            modalDesc.textContent = description;
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if(event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

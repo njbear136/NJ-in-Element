@@ -56,6 +56,74 @@ body {
     border-radius: 15px;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #4a7c6f;
+    margin: 15% auto;
+    padding: 40px;
+    border-radius: 25px;
+    max-width: 750px;
+    width: 85%;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #06e4b7;
+}
+
+.modal-body{
+    display: flex;
+    gap: 25px;
+}
+
+.modal-image {
+    flex: 0 0 280px;
+    width: 250px;
+    height: 220px;
+    background-color: #582f1e;
+    border-radius: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.modal-description {
+    flex: 1;
+    color: white;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: Georgia, serif;
+}
+
+.modal-description p{
+    margin: 0;
+}
+
 .back-button-container{
     text-align: center;
     margin-bottom: 40px;
