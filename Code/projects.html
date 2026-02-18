@@ -14,17 +14,31 @@
 
     <!--Project Containers-->
     <div class="project-container">
-        <div class="project-item">
+        <div class="project-item" data-description="An arduino object following robot that I made for my school's science fair!~" onclick="openModal(this)">
             <img src="Images/project1.jpg" alt="Project-1">
         </div>
-        <div class="project-item">
+        <div class="project-item" data-description="Another angle of the robot hehe" onclick="openModal(this)">
             <img src="Images/project2.jpg" alt="Project-2">
         </div>
-        <div class="project-item">
+        <div class="project-item" data-description="My first creative and big coding project called Color Symphony. It is a Vite and React webpage. In the webpage you can draw on the canvas and for every color there is a specific song that plays in the background as you draw(some of my favorite songs)!" onclick="openModal(this)">
             <img src="Images/project3.png" alt="Project-3">
         </div>
-        <div class="project-item">
+        <div class="project-item" data-description="One of my favorite projects! Artsy Capture, a picture doodling Vite and React webpage where you can upload your pictures and then add cute stickers and doodles to it. Kind of like the vibe you get in a photobooth lol." onclick="openModal(this)">
             <img src="Images/project4.png" alt="Project-4">
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImg" src="" alt="Project">
+                </div>
+                <div class="modal-description">
+                    <p id="modalDesc"></p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -32,6 +46,32 @@
 <div class="back-btn-container">
     <button class="back-btn" onclick="window.location.href='home.html'"> Back to Home </button>
 </div>
+
+<script>
+    function openModal(element){
+        const modal= document.getElementById('modal');
+        const modalImg= document.getElementById('modalImg');
+        const modalDesc = document.getElementById('modalDesc');
+        const img = element.querySelector('img');
+        const description = element.getAttribute('data-description');
+
+        modalImg.src = img.src;
+        modalDesc.textContent= description;
+        modal.style.display= 'block';
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        const modal = document.getElementById('modal');
+        if(event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
 </body>
 
 </html>
