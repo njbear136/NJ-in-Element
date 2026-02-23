@@ -17,8 +17,8 @@ It is my very own personal website that gives a sneak peak into my interests and
 ## Tech Stack
 HTML, CSS and Javascript(no dependencies used)
 
-##Demo link: 
+## Demo link: 
 
-##Screenshot of the home page for a preview:
+## Screenshot of the home page for a preview:
 <img width="1349" height="594" alt="Screenshot 2026-01-27 194549" src="https://github.com/user-attachments/assets/b3f1313b-1db1-4ee4-af46-252719d815b9" />
 
