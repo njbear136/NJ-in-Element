@@ -5,10 +5,25 @@
         <meta name="viewport" content="width-device-width, initial-scale= 1.0">
         <title>NJ in Element</title>
         <link rel="stylesheet" href="styles.css">
-
+        <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
     </head>
 
 <body>
+    <div id="welcomePopup" class="welcome-popup">
+        <h2 class="welcome-subtitle">Welcome to home...</h2>
+    </div>
+ 
+   <script>
+    window.addEventListener('load', function() {
+        const welcomePopup = document.getElementById('welcomePopup');
+    
+        setTimeout(function() {
+            welcomePopup.style.opacity = '0';
+            welcomePopup.style.pointerEvents = 'none';
+        }, 800);
+    });
+</script>
+
     <!--Title-->
     <h1 class="main-title"> NJ in Element</h1>
 
