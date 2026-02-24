@@ -18,6 +18,14 @@ It is my very own personal website that gives a sneak peak into my interests and
 ## Tech Stack
 HTML, CSS and Javascript(no dependencies used)
 
+## How to Clone
+
+1. Copy the repository URL from GitHub
+2. Open your terminal/command prompt
+3. Run in terminal: git clone https://github.com/njbear136/NJ-in-Element.git
+4. Navigate to the folder, run in terminal: cd NJ-in-Element
+5. Open `index.html` in your browser and enjoy!
+
 ## Live link: https://njbear136.github.io/NJ-in-Element/
 
 ## Screenshot of the home page for a preview:
