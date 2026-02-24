@@ -3,6 +3,7 @@ It is my very own personal website that gives a sneak peak into my interests and
 
 ## What's Inside(The pages)
 
+- **Home page**: Main page with a small description of what the webpage is about, the title of the webpage and buttons to navigate to the other pages.
 - **My Art**: Click to expand and view my full artwork with descriptions.
 - **Projects**: Showcase of my coding and robotics work.
 - **About Me**: My personal bio and a bit about me.
